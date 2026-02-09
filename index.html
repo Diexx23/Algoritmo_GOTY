@@ -2,34 +2,37 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Predicción GOTY | Algoritmo A/B</title>
+  <title>GOTY Predictor | Algoritmo A/B</title>
 
-  <!-- Bootstrap -->
+  <!-- Bootstrap (solo grid y utilidades, compatible GitHub Pages) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="container py-5">
+<div class="app-container container py-5">
 
+  <!-- HEADER -->
   <header class="text-center mb-5">
-    <h1 class="goty-title">GAME OF THE YEAR</h1>
-    <p class="subtitle">
-      Decide qué videojuego merece el GOTY.  
-      Tus elecciones construyen el ranking.
+    <h1 class="app-title">GAME OF THE YEAR</h1>
+    <p class="app-subtitle">
+      Inspirado en el diseño de Steam.  
+      El ranking emerge de tus decisiones.
     </p>
   </header>
 
-  <!-- VS SECTION -->
-  <section class="vs-section mb-5">
-    <div class="row align-items-center">
+  <!-- MAIN PANEL -->
+  <main class="main-panel p-4 mb-5">
+
+    <!-- VS -->
+    <div class="row align-items-center mb-4">
 
       <div class="col-md-5 mb-3 mb-md-0">
         <button id="optionA" class="game-card"></button>
       </div>
 
-      <div class="col-md-2 text-center vs-text">
+      <div class="col-md-2 text-center vs-label">
         VS
       </div>
 
@@ -38,18 +41,19 @@
       </div>
 
     </div>
-  </section>
 
-  <!-- CONTROLS -->
-  <div class="text-center mb-4">
-    <button id="resetBtn" class="btn btn-outline-warning">
-      Reiniciar algoritmo
-    </button>
-  </div>
+    <!-- RESET -->
+    <div class="text-center">
+      <button id="resetBtn" class="reset-btn">
+        Reiniciar algoritmo
+      </button>
+    </div>
 
-  <!-- RANKING -->
-  <section>
-    <h3 class="ranking-title text-center mb-3">Ranking actual</h3>
+  </main>
+
+  <!-- RANKING PANEL -->
+  <section class="ranking-panel p-4">
+    <h3 class="ranking-title mb-3">Ranking actual</h3>
     <ul id="ranking" class="ranking-list"></ul>
   </section>
 
