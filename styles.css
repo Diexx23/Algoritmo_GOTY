@@ -1,75 +1,100 @@
+/* BASE */
 body {
-  background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+  background-color: #0e141b;
+  color: #c6d4df;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* CONTAINER */
+.app-container {
+  max-width: 1100px;
+}
+
+/* HEADER */
+.app-title {
   color: #ffffff;
-  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 
-/* TITLES */
-.goty-title {
-  font-weight: 800;
-  letter-spacing: 4px;
-  color: #f5c518;
+.app-subtitle {
+  color: #8f98a0;
+  font-size: 0.95rem;
 }
 
-.subtitle {
-  color: #cfcfcf;
-  font-size: 1rem;
+/* PANELS */
+.main-panel,
+.ranking-panel {
+  background-color: #171d25;
+  border-radius: 6px;
+  border: 1px solid #2a475e;
 }
 
-/* VS SECTION */
-.vs-text {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #f5c518;
+/* VS */
+.vs-label {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #66c0f4;
 }
 
 /* GAME CARDS */
 .game-card {
   width: 100%;
-  background: linear-gradient(145deg, #1f1f3a, #141428);
-  border: 2px solid #2e2e5e;
-  color: white;
-  padding: 50px 20px;
-  font-size: 1.3rem;
-  border-radius: 12px;
-  transition: all 0.25s ease;
+  background-color: #1f2933;
+  border: 1px solid #2a475e;
+  border-radius: 4px;
+  padding: 45px 20px;
+  color: #ffffff;
+  font-size: 1.15rem;
+  text-align: center;
+  transition: all 0.2s ease;
 }
 
 .game-card:hover {
-  transform: scale(1.05);
-  border-color: #f5c518;
-  box-shadow: 0 0 25px rgba(245, 197, 24, 0.4);
+  background-color: #263645;
+  border-color: #66c0f4;
+}
+
+/* RESET */
+.reset-btn {
+  background: transparent;
+  border: 1px solid #8f98a0;
+  color: #8f98a0;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 /* RANKING */
 .ranking-title {
-  color: #f5c518;
+  color: #ffffff;
+  font-size: 1.1rem;
 }
 
 .ranking-list {
   list-style: none;
   padding: 0;
-  max-width: 600px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .ranking-list li {
-  background: #1c1c34;
-  border: 1px solid #2a2a4a;
-  padding: 12px 18px;
-  margin-bottom: 8px;
-  border-radius: 8px;
+  background-color: #1f2933;
+  border: 1px solid #2a475e;
+  border-radius: 3px;
+  padding: 10px 14px;
+  margin-bottom: 6px;
   display: flex;
   justify-content: space-between;
+  font-size: 0.9rem;
 }
 
-/* BUTTON */
-.btn-outline-warning {
-  border-color: #f5c518;
-  color: #f5c518;
-}
-
-.btn-outline-warning:hover {
-  background-color: #f5c518;
-  color: #000;
+/* GOTY ACCENT (TOP ITEM) */
+.ranking-list li:first-child {
+  border-left: 4px solid #c7a74a;
 }
